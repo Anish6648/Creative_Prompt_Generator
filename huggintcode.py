@@ -97,9 +97,8 @@ if 'current_prompt' not in st.session_state:
 st.title("Creative Writing Prompt Generator")
 st.markdown("---")
 
-# Automatically load model on app start
-#MODEL_PATH = "./fine_tuned_writing_model"
-HF_MODEL_ID = "Anish6648/Creative-Writing-Prompt-Generator/fine_tuned_writing_model"
+
+HF_MODEL_ID = "Anish6648/Creative-Writing-Prompt-Generator/fine_tuned_writing_model/checkpoint-1350"
 # Automatically load model on app start
 if 'generator' not in st.session_state: # This condition might prevent re-initialization
     st.session_state.generator = None # Initialize to None if not present
